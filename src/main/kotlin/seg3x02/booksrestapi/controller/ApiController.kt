@@ -54,6 +54,7 @@ class ApiController(val authorRepository: AuthorRepository,
             HttpStatus.OK)
     }
 
+    // I think I need this one as long as there are authors obviously
     @Operation(summary = "Get an authors by id")
     @GetMapping("/authors/{id}")
     fun getAuthorById(@PathVariable("id") id: Long): ResponseEntity<AuthorRepresentation> {
