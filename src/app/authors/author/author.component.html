@@ -1,0 +1,40 @@
+<div *ngIf="!selectedAuthor">
+    <h2>Sorry can't find the requested author...</h2>
+</div>
+
+<div *ngIf="selectedAuthor">
+    <h2>Here are details of the Author {{selectedAuthor.id}}</h2>
+    <div class="row">
+        <div class="col-3">First Name:</div>
+        <div class="col-9">{{ selectedAuthor.firstName }}</div>
+    </div>
+    <div class="row">
+        <div class="col-3">Last Name:</div>
+        <div class="col-9">{{ selectedAuthor.lastName }}</div>
+    </div>
+    <!-- <div class="row">
+      <div class="col-3">Category:</div>
+      <div class="col-9">{{ selectedAuthor.category }}</div>
+    </div>
+    <div class="row">
+      <div class="col-3">Title:</div>
+      <div class="col-9">{{ selectedAuthor.title }}</div>
+    </div>
+    <div class="row">
+      <div class="col-3">Cost:</div>
+      <div class="col-9">{{ selectedAuthor.cost }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedAuthor.authors">
+      <div class="col-3">Author:</div>
+      <div class="col-9"><span [innerHTML]="selectedAuthor.authors | authornames"></span></div>
+    </div>
+    <div class="row" [hidden]="!selectedAuthor.year">
+      <div class="col-3">Year:</div>
+      <div class="col-9">{{ selectedAuthor.year }}</div>
+    </div>
+    <div class="row" [hidden]="!selectedAuthor.description">
+      <div class="col-3">Description:</div>
+      <div class="col-9">{{ selectedAuthor.description }}</div>
+    </div> -->
+</div>
+  
