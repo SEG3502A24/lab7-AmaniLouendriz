@@ -1,8 +1,8 @@
 <div>
-  <h2>Search for an author</h2>
-  <div>
-    <label for="id">Author Id:</label>
-    <input type="text" #authorQuery id="id">
+  <h2 class="p-2">Search for an author</h2>
+  <div class="p-2 m-2">
+    <label for="id" class="p-2">Author Id:</label>
+    <input type="text" class="m-2" #authorQuery id="id">
     <button (click)="submit(authorQuery.value)">Search</button>
   </div>
   <div class="container">
