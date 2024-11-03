@@ -4,6 +4,7 @@
 Amani Louendriz
 # Student Number:
 300 218 319
+## The lab is present on the main branch, where both client and server are present, no changes were made for the server
 # Steps to run:
 1- To initialize the database image, run: 
 
@@ -15,7 +16,7 @@ Using tools like Postman, populate data for authors, books and bios, as follows:
 
 ## create authors:
 
-post operations, to the "http://localhost:8080/books-api/authors" endpoint
+**post** operations, to the "http://localhost:8080/books-api/authors" endpoint
 
 {
     "firstName":"Tara",
@@ -54,7 +55,7 @@ post operations, to the "http://localhost:8080/books-api/authors" endpoint
 
 ## link authors to books
 
-post operation, to the http://localhost:8080/books-api/authors/1/books  endpoint:
+**post** operation, to the http://localhost:8080/books-api/authors/1/books  endpoint:
 
 {
     "title":"Educated",
@@ -65,7 +66,7 @@ post operation, to the http://localhost:8080/books-api/authors/1/books  endpoint
     "description":"Inspirational"
 }
 
-post operation, to the http://localhost:8080/books-api/authors/2/books  endpoint:
+**post** operation, to the http://localhost:8080/books-api/authors/2/books  endpoint:
 
 {
     "title":"Harry Potter",
@@ -76,7 +77,7 @@ post operation, to the http://localhost:8080/books-api/authors/2/books  endpoint
     "description":"Amazing"
 }
 
-post operation, to the http://localhost:8080/books-api/authors/3/books endpoint:
+**post** operation, to the http://localhost:8080/books-api/authors/3/books endpoint:
 
 {
     "title":"Night School",
@@ -87,7 +88,7 @@ post operation, to the http://localhost:8080/books-api/authors/3/books endpoint:
     "description":"Gripping"
 }
 
-post operation, to the http://localhost:8080/books-api/authors/4/books endpoint:
+**post** operation, to the http://localhost:8080/books-api/authors/4/books endpoint:
 
 {
     "title":"The Daughter",
@@ -98,7 +99,7 @@ post operation, to the http://localhost:8080/books-api/authors/4/books endpoint:
     "description":"Best seller"
 }
 
-post operation, to the http://localhost:8080/books-api/authors/5/books endpoint:
+**post** operation, to the http://localhost:8080/books-api/authors/5/books endpoint:
 
 {
     "title":"The Killing Kind",
@@ -109,7 +110,7 @@ post operation, to the http://localhost:8080/books-api/authors/5/books endpoint:
     "description":"Best seller"
 }
 
-post operation, to the http://localhost:8080/books-api/authors/6/books endpoint:
+**post** operation, to the http://localhost:8080/books-api/authors/6/books endpoint:
 
 {
     "title":"Over My Dead Body",
@@ -120,7 +121,7 @@ post operation, to the http://localhost:8080/books-api/authors/6/books endpoint:
     "description":"Best seller. Suspense"
 }
 
-post operation, to the http://localhost:8080/books-api/authors/3/books endpoint:
+**post** operation, to the http://localhost:8080/books-api/authors/3/books endpoint:
 
 {
     "title":"Alias Emma",
@@ -131,7 +132,7 @@ post operation, to the http://localhost:8080/books-api/authors/3/books endpoint:
     "description":"Best seller. Suspense"
 }
 
-post operation, to the http://localhost:8080/books-api/authors/4/books endpoint:
+**post** operation, to the http://localhost:8080/books-api/authors/4/books endpoint:
 
 {
     "title":"Sisters",
@@ -144,21 +145,25 @@ post operation, to the http://localhost:8080/books-api/authors/4/books endpoint:
 
 ## add bios to authors
 
-put operation, to the http://localhost:8080/books-api/bios/1 endpoint:
+**put** operation, to the http://localhost:8080/books-api/bios/1 endpoint:
 
 {
     "biodata":"Tara is an American memoirist"
 }
 
-put operation, to the http://localhost:8080/books-api/bios/2 endpoint:
+**put** operation, to the http://localhost:8080/books-api/bios/2 endpoint:
 
 {
     "biodata":"J.K Rowling is a british author and philantropist"
 }
 
-put operation, to the http://localhost:8080/books-api/bios/3 endpoint:
+**put** operation, to the http://localhost:8080/books-api/bios/3 endpoint:
 
 {
     "biodata":"C.J Daugherty is a british novelist"
 }
+
+3- open a terminal inside the **server** package, once the docker container is running, run **gradlew bootRun**
+
+4- open another terminal inside the **client** package, and run **ng serve**
 
